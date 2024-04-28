@@ -1,0 +1,12 @@
+[requires]
+openblas/0.3.26@conan/stable
+
+[generators]
+cmake_find_package
+
+[options]
+blas:threaded=True
+
+[imports]
+bin, *.dll -> ./bin
+lib, *.lib -> ./lib
